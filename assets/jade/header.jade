@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		title Fashion-Accesories:.
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="assets/css/main.css")
+		link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/font-awesome/css/font-awesome.min.css")
+
+		script(src="assets/js/jquery.js")
+		script(src="assets/js/bootstrap.min.js")
+	body
+		.container-fluid.head
+			.container
+				small Default Welcome Msg!
+				.btn-group.pull-right
+					button(type="button").dropdown-toggle#dropdownMenu1(data-toggle="dropdown")(aria-haspopup="true")(aria-expanded="false") Language
+						span.caret
+					ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+						li
+							a(href="#") Español
+						li
+							a(href="#") Frances
+						li
+							a(href="#") Portugues
+					button(type="button").dropdown-toggle#dropdownMenu1(data-toggle="dropdown")(aria-haspopup="true")(aria-expanded="false") $ Currency
+						span.caret
+					button(type="button").dropdown-toggle#dropdownMenu1(data-toggle="dropdown")(aria-haspopup="true")(aria-expanded="false") My Account
+						span.caret
+				.row
+					.col-md-4
+						.col-md-4
+							i.fa.fa-clock-o(aria-hidden="true")
+						.col-md-8
+							h4 OPENING TIME
+							small 9:00AM-10:00PM
+					.col-md-4
+						img(src="assets/images/logo.png")
+					.col-md-4
+						.buscar
+							i.glyphicon.glyphicon-search
+							input(type="text")(placeholder="Search")
+
