@@ -1,0 +1,59 @@
+doctype html
+html
+	head
+		title Fashion-Accesories:.
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="assets/css/main.css")
+		link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/font-awesome/css/font-awesome.min.css")
+
+		script(src="assets/js/jquery.js")
+		script(src="assets/js/bootstrap.min.js")
+	body
+		include header.jade
+		include menu.jade
+		.container-fluid.contact-fondo
+			.container.contact-oscuro
+				.row.contact-us
+					.col-md-6
+						h1 CONTACT US
+					.col-md-6.right
+						h5 Contact info
+						p phone:0(1234)567890
+						p Mail:info@roadthemes.com
+						p Adress:N°40 Baria Sreet 133/2 New York City.NY.United States.
+		.container
+			.row.map
+				.col-md-6
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.8401166913!2d-74.25819750365172!3d40.70583163547031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York%2C+EE.+UU.!5e0!3m2!1ses-419!2spe!4v1464911173190" width="450" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+				.col-md-6.forms
+					form.form-inline
+						.form-group
+							label.sr-only(for="exampleInputEmail3") First name
+							input(type="text").form-control#exampleInputEmail3(placeholder="First name")
+						.form-group
+							label.sr-only(for="exampleInputEmail3") Last name
+							input(type="text").form-control#exampleInputEmail3(placeholder="Last name")
+					form.form-inline
+						.form-group
+							label.sr-only(for="exampleInputEmail3") Email
+							input(type="text").form-control#exampleInputEmail3(placeholder="Email")
+						.form-group
+							label.sr-only(for="exampleInputEmail3") Web site
+							input(type="text").form-control#exampleInputEmail3(placeholder="Web site")
+					form
+						.form-group
+							input(type="text").form-control#exampleInputEmail1(placeholder="Subject")
+						.form-group
+							textarea.form-control(rows="10")(placeholder="Message")
+							button.pull-right(type="submit").btn.btn-default Send
+		include pie.jade
+
+
+
+
+
+
+
+

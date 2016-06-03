@@ -1,4 +1,3 @@
-//- extends header.jade
 doctype html
 html
 	head
@@ -12,20 +11,10 @@ html
 		script(src="assets/js/jquery.js")
 		script(src="assets/js/bootstrap.min.js")
 	body
-		.container-fluid.header-home
-			.container
-				.col-md-6
-					ul.list-unstyled.list-inline
-						li
-							a(href="home.html") HOME
-						li
-							a(href="contac.html") CONTACT US
-				.col-md-6
-					.cart
-						i.fa.fa-shopping-cart(aria-hidden="true") My Cart
-						.row
-							small 2 item(s)-$244.00
-		#caorusel-example-generic.carousel.slide(data-ride="carousel")
+		include header.jade
+		include menu.jade
+		.container-fluid
+			#carousel-example-generic.carousel.slide(data-ride="carousel")
 				ol.carousel-indicators
 					li.active(data-target="#carousel-example-generic" data-slide-to="0")
 					li(data-target="#carousel-example-generic" data-slide-to="1")
@@ -37,158 +26,174 @@ html
 						img(src="assets/images/slider2.jpg" alt="true")
 						div.carousel-caption
 			.dentro
-				.row
+				.row.thumbnail
 					ul.media-list
 						li.media
 							.media-left
 								img.media-object(src="assets/images/c2.jpg")(width="100px")
 							.media-body.list-inline
 								h4.media-heading Aliquam Consequat
-								i.fa.fa-times
 								p 1x $500
+									i.fa.fa-times
 						li.media
 							.media-left
 								img.media-object(src="assets/images/cart-2.jpg")(width="100px")
 							.media-body.list-inline
 								h4.media-heading Quisque In Arcut
-								i.fa.fa-times
 								p 1x $200
-					.col-md-6
+									i.fa.fa-times
+					.row
 						.col-md-6
-							ul.list-unstyled
-								li Sub-Total
-								li Eco Tax (-2.00)
-								li VAT (20%)
+							h5 Sub-Total<br>
+							h5 Eco Tax (-2.00)<br>
+							h5 VAT (20%)<br>
 						.col-md-6
-							ul.list-unstyled
-								li $700
-								li $7.00
-								li $40.00
-		.container
+							h5 $700<br>
+							h5 $7.00<br>
+							h5 $40.00<br>
+		.container.img2
 			.row
 				.col-md-5
-					img(src="assets/images/banner1.jpg")
+					img.img-responsive(src="assets/images/banner1.jpg")
 				.col-md-7
-					img(src="assets/images/banner2.jpg")
+					img.img-responsive(src="assets/images/banner2.jpg")
 		.container
 			.row
-				.col-md-3
+				.col-md-3.h
 					hr
-					hr
-				.col-md-6
-					.col-md-3
-						i.fa.fa-chevron-left(aria-hidden="true")
-					.col-md-6
-						ul.list-unstyled.list-inline
-							li LATEST
-							li BESTSELLER
-							li SALE
-					.col-md-3
+					hr.hr
+				.col-md-6.icons-list
+					center
+						ul.fa.fa-chevron-left.list-unstyled.list-inline
+							li 
+								a(href="#") LATEST
+							li 
+								a(href="#") BESTSELLER
+							li 
+								a(href="#") SALE
 						i.fa.fa-chevron-right(aria-hidden="true")
-				.col-md-3
+				.col-md-3.h#h
 					hr
-					hr
+					hr.hr
 			#caorusel-example-generic.carousel.slide(data-ride="carousel")
 				ol.carousel-indicators
 					li.active(data-target="#carousel-example-generic" data-slide-to="0")
 					li(data-target="#carousel-example-generic" data-slide-to="1")
 				div.carousel-inner(role="listbox")
-					div.item.active						
+					div.item.active.productos				
 						.col-md-3.thumbnail
 							img(src="assets/images/a1.jpg")
+							.new
+								small NEW
 							.row.caption
 								h3.text-center Deliver Wide
 								center
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
 								p.text-center $218.00
 
 						.col-md-3.thumbnail
 							img(src="assets/images/b1.jpg")
+							.sale
+								small SALE
+							.new
+								small NEW
 							.row.caption
 								h3.text-center Deliver Wide
 								center
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
 								p.text-center $218.00
 
 						.col-md-3.thumbnail
 							img(src="assets/images/c1.jpg")
+							.sale
+								small SALE
 							.row.caption
 								h3.text-center Deliver Wide
 								center
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
 								p.text-center $218.00
 
 						.col-md-3.thumbnail
 							img(src="assets/images/d1.jpg")
+							.new
+								small NEW
 							.row.caption
 								h3.text-center Deliver Wide
 								center
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
 								p.text-center $218.00
 
-					div.item
+					div.item.productos
 						.col-md-3.thumbnail
 							img(src="assets/images/a2.jpg")
+							.new
+								small NEW
 							.row.caption
 								h3.text-center Deliver Wide
 								center
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
 								p.text-center $218.00
 
 						.col-md-3.thumbnail
 							img(src="assets/images/b2.jpg")
+							.new
+								small NEW
 							.row.caption
 								h3.text-center Deliver Wide
 								center
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
 								p.text-center $218.00
 
 						.col-md-3.thumbnail
 							img(src="assets/images/c2.jpg")
+							.new
+								small NEW
 							.row.caption
 								h3.text-center Deliver Wide
 								center
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
 								p.text-center $218.00
 
 						.col-md-3.thumbnail
 							img(src="assets/images/d2.jpg")
+							.new
+								small NEW
 							.row.caption
 								h3.text-center Deliver Wide
 								center
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
-									i.fa.fa-star-o
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
 								p.text-center $218.00
 		.container-fluid.clientes
 			.container
@@ -206,26 +211,30 @@ html
 					img.img-responsive(src="assets/images/client6.jpg")
 		.container
 			.row
-				.col-md-3
+				.col-md-3.h
 					hr
-					hr
-				.col-md-6
-					.col-md-2
-						i.fa.fa-chevron-left(aria-hidden="true")
-					.col-md-8
-						ul.list-unstyled.list-inline
-							li CLOTHING
-							li EQUIPMENTS
-							li JEWELLERY
-					.col-md-2
+					hr.hr
+				.col-md-6.icons-list
+					center
+						ul.fa.fa-chevron-left.list-unstyled.list-inline
+							li 
+								a(href="#") CLOTHING
+							li 
+								a(href="#") EQUIPMENTS
+							li 
+								a(href="#") JEWELLERY
 						i.fa.fa-chevron-right(aria-hidden="true")
-				.col-md-3
+				.col-md-3.h#h
 					hr
-					hr
-			.row
+					hr.hr
+			.row.lista-product
 				.col-md-4
 					.col-md-6.thumbnail
 						img.img-responsive(src="assets/images/a1.jpg")
+						.sale
+							small SALE
+						.new
+							small NEW
 					.col-md-6
 						h5 Deliver Wide
 						p $218.00
@@ -240,6 +249,8 @@ html
 				.col-md-4
 					.col-md-6.thumbnail
 						img.img-responsive(src="assets/images/d2.jpg")
+						.new
+							small NEW
 					.col-md-6
 						h5 Deliver Wide
 						p $218.00
@@ -268,6 +279,8 @@ html
 				.col-md-4
 					.col-md-6.thumbnail
 						img.img-responsive(src="assets/images/c2.jpg")
+						.new
+							small NEW
 					.col-md-6
 						h5 Deliver Wide
 						p $218.00
@@ -282,6 +295,8 @@ html
 				.col-md-4
 					.col-md-6.thumbnail
 						img.img-responsive(src="assets/images/c2.jpg")
+						.sale
+							small SALE
 					.col-md-6
 						h5 Deliver Wide
 						p $218.00
@@ -296,6 +311,8 @@ html
 				.col-md-4
 					.col-md-6.thumbnail
 						img.img-responsive(src="assets/images/e2.jpg")
+						.new
+							small NEW
 					.col-md-6
 						h5 Deliver Wide
 						p $218.00
@@ -308,21 +325,19 @@ html
 						button.btn
 							i.fa.fa-shopping-cart Add to car
 			.row
-				.col-md-3
+				.col-md-3.h
 					hr
-					hr
-				.col-md-6
-					.col-md-4
-						i.fa.fa-chevron-left(aria-hidden="true")
-					.col-md-4
-						ul.list-unstyled.list-inline
-							li BLOG
-					.col-md-4
+					hr.hr
+				.col-md-6.icons-list
+					center
+						ul.fa.fa-chevron-left.list-unstyled.list-inline
+							li 
+								a(href="#") BLOG
 						i.fa.fa-chevron-right(aria-hidden="true")
-				.col-md-3
+				.col-md-3.h#h
 					hr
-					hr
-			.row
+					hr.hr
+			.row.blog
 				.col-md-3
 					img.img-responsive(src="assets/images/blog2.jpg")
 					h5 THE SAMPLE HEADING TITLE
@@ -353,24 +368,28 @@ html
 						small Read More...
 			.container
 				.row
-					.col-md-4.order
-						.col-md-4.separacion
-							i.fa.fa-phone-square
-						.col-md-8
-							h4 ORDER ONLINE NOW
-							h5 Call Us:(0123)456 789
-					.col-md-4.order
-						.col-md-4.separacion
-							i.fa.fa-plane
-						.col-md-8
-							h4 ORDER ONLINE NOW
-							h5 Call Us:(0123)456 789
-					.col-md-4.order
-						.col-md-4.separacion
-							i.fa.fa-money
-						.col-md-8
-							h4 ORDER ONLINE NOW
-							h5 Call Us:(0123)456 789
+					.col-md-4
+						.col-md-12.order
+							.col-md-4.separacion
+								i.fa.fa-phone-square
+							.col-md-8
+								h4 ORDER ONLINE NOW
+								h5 Call Us:(0123)456 789
+					.col-md-4
+						.col-md-12.order
+							.col-md-4.separacion
+								i.fa.fa-plane
+							.col-md-8
+								h4 ORDER ONLINE NOW
+								h5 Call Us:(0123)456 789
+					.col-md-4
+						.col-md-12.order
+							.col-md-4.separacion
+								i.fa.fa-money
+							.col-md-8
+								h4 ORDER ONLINE NOW
+								h5 Call Us:(0123)456 789
+		include pie.jade
 
 
 

@@ -12,33 +12,55 @@ html
 		script(src="assets/js/bootstrap.min.js")
 	body
 		.container-fluid.head
-			.container
+			.container.head1
 				small Default Welcome Msg!
 				.btn-group.pull-right
-					button(type="button").dropdown-toggle#dropdownMenu1(data-toggle="dropdown")(aria-haspopup="true")(aria-expanded="false") Language
+					button(type="button").dropdown-toggle(data-toggle="dropdown")(aria-haspopup="true")(aria-expanded="false") My Account
 						span.caret
-					ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+						i.pull-left.fa.fa-user
+					ul.dropdown-menu
+						li
+							a(href="#") Me
+						li
+							a(href="#") Websites
+						li
+							a(href="#") Moda
+				.btn-group.pull-right
+					button(type="button").dropdown-toggle(data-toggle="dropdown")(aria-haspopup="true")(aria-expanded="false") Currency
+						span.caret
+						i.pull-left.fa.fa-usd
+					ul.dropdown-menu
+						li
+							a(href="#") $200.00
+						li
+							a(href="#") $300.00
+						li
+							a(href="#") $400.00
+				.btn-group.pull-right
+					button(type="button").dropdown-toggle(data-toggle="dropdown")(aria-haspopup="true")(aria-expanded="false") Language
+						span.caret
+						img.pull-left(src="assets/images/flag1.png")
+					ul.dropdown-menu
 						li
 							a(href="#") Español
 						li
 							a(href="#") Frances
 						li
-							a(href="#") Portugues
-					button(type="button").dropdown-toggle#dropdownMenu1(data-toggle="dropdown")(aria-haspopup="true")(aria-expanded="false") $ Currency
-						span.caret
-					button(type="button").dropdown-toggle#dropdownMenu1(data-toggle="dropdown")(aria-haspopup="true")(aria-expanded="false") My Account
-						span.caret
-				.row
-					.col-md-4
-						.col-md-4
+							a(href="#") Ingles
+		.container
+			.row.head2
+				.col-md-4
+					center
+						.col-md-4#open
 							i.fa.fa-clock-o(aria-hidden="true")
 						.col-md-8
 							h4 OPENING TIME
 							small 9:00AM-10:00PM
-					.col-md-4
+				.col-md-4
+					center
 						img(src="assets/images/logo.png")
-					.col-md-4
-						.buscar
-							i.glyphicon.glyphicon-search
-							input(type="text")(placeholder="Search")
+				.col-md-4
+					.buscar.pull-right
+						input(type="text")(placeholder="Search")
+						i.pull-right.fa.fa-search
 

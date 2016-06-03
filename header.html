@@ -12,29 +12,47 @@
   </head>
   <body>
     <div class="container-fluid head">
-      <div class="container"><small>Default Welcome Msg!</small>
+      <div class="container head1"><small>Default Welcome Msg!</small>
         <div class="btn-group pull-right">
-          <button type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Language<span class="caret"></span></button>
-          <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
+          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">My Account<span class="caret"></span><i class="pull-left fa fa-user"></i></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Me</a></li>
+            <li><a href="#">Websites</a></li>
+            <li><a href="#">Moda</a></li>
+          </ul>
+        </div>
+        <div class="btn-group pull-right">
+          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Currency<span class="caret"></span><i class="pull-left fa fa-usd"></i></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">$200.00</a></li>
+            <li><a href="#">$300.00</a></li>
+            <li><a href="#">$400.00</a></li>
+          </ul>
+        </div>
+        <div class="btn-group pull-right">
+          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Language<span class="caret"></span><img src="assets/images/flag1.png" class="pull-left"></button>
+          <ul class="dropdown-menu">
             <li><a href="#">Español</a></li>
             <li><a href="#">Frances</a></li>
-            <li><a href="#">Portugues</a></li>
+            <li><a href="#">Ingles</a></li>
           </ul>
-          <button type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">$ Currency<span class="caret"></span></button>
-          <button type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">My Account<span class="caret"></span></button>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="col-md-4"><i aria-hidden="true" class="fa fa-clock-o"></i></div>
-            <div class="col-md-8">
-              <h4>OPENING TIME</h4><small>9:00AM-10:00PM</small>
-            </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row head2">
+        <div class="col-md-4">
+          <div id="open" class="col-md-4"><i aria-hidden="true" class="fa fa-clock-o"></i></div>
+          <div class="col-md-8">
+            <h4>OPENING TIME</h4><small>9:00AM-10:00PM</small>
           </div>
-          <div class="col-md-4"><img src="assets/images/logo.png"></div>
-          <div class="col-md-4">
-            <div class="buscar"><i class="glyphicon glyphicon-search"></i>
-              <input type="text" placeholder="Search">
-            </div>
+        </div>
+        <div class="col-md-4">
+          <center><img src="assets/images/logo.png"></center>
+        </div>
+        <div class="col-md-4">
+          <div class="buscar pull-right">
+            <input type="text" placeholder="Search"><i class="pull-right fa fa-search"></i>
           </div>
         </div>
       </div>

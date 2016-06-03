@@ -1,0 +1,345 @@
+p small {
+  color: #AAA;
+}
+
+.head {
+  background-color: #EEEEEE;
+}
+
+.head1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btn-group button {
+  border: 1px solid #EEEEEE;
+  background-color: #EEEEEE;
+}
+
+.btn-group button, img, i {
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+.head2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.head2 .col-md-8 {
+  margin-left: -50px;
+}
+
+#open i {
+  font-size: 59px;
+}
+
+.buscar {
+  padding: 5px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  width: 260px;
+  margin-top: 20px;
+}
+
+.buscar input {
+  border: none;
+}
+
+.header-home {
+  background-color: #EEEEEE;
+}
+
+.home2 {
+  margin-bottom: -25px;
+}
+
+.home2 li {
+  padding: 25px 0;
+}
+
+.home2 li:hover {
+  padding: 25px 15px;
+  background-color: #E47676;
+}
+
+.home2 a {
+  color: #000;
+}
+
+.home2 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cart {
+  color: #fff;
+  font-size: 20px;
+  background-color: #514949;
+  width: 150px;
+  padding-top: 5px;
+}
+
+.cart i {
+  margin-right: 15px;
+}
+
+.carousel-inner img {
+  margin-top: 0;
+}
+
+.dentro {
+  width: 255px;
+  margin-left: 920px;
+  margin-top: -380px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.dentro .thumbnail {
+  background-color: #F9F3F0;
+}
+
+.dentro li .media-body {
+  padding-top: 15px;
+}
+
+.dentro .media i {
+  padding-left: 30px;
+}
+
+.img2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.h hr {
+  margin-top: -5px;
+  width: 350px;
+}
+
+.h .hr {
+  margin-top: -15px;
+}
+
+#h {
+  margin-left: -100px;
+}
+
+.icons-list {
+  margin-top: -10px;
+}
+
+.icons-list li {
+  margin-left: 3px;
+}
+
+.icons-list a {
+  color: #AAA;
+  font-size: 20px;
+}
+
+.icons-list a:hover {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.productos .thumbnail {
+  width: 275px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.new {
+  top: 50px;
+  background-color: #E47676;
+  border: 1px solid #E47676;
+  color: #fff;
+  padding: 5px;
+  width: 45px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.sale {
+  top: 15px;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  padding: 5px;
+  width: 45px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.fa-star {
+  font-size: 15px;
+  border-color: #AAA;
+  background-color: #fff;
+}
+
+.fa-star:hover {
+  font-size: 15px;
+  border-color: #AAA;
+  background-color: #000;
+}
+
+.clientes {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-image: url("../../assets/images/client-bg.jpg");
+  background-size: contain;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.lista-product {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.blog {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.blog a {
+  color: #E47676;
+}
+
+.blog h5 {
+  font-weight: bold;
+}
+
+.blog p {
+  margin-top: 10px;
+}
+
+.order {
+  border: 2px solid #AAA;
+  margin-right: -15px;
+  margin-bottom: 40px;
+}
+
+.separacion {
+  border-right: 1px solid #AAA;
+  margin-top: 10px;
+}
+
+.order i {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #AAA;
+}
+
+.pie1 {
+  background-color: #EEEEEE;
+}
+
+.pie1 h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.redes i {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 5px;
+  width: 20px;
+}
+
+.lista-pie i {
+  margin-bottom: 10px;
+}
+
+#lista-ub li i {
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 5px;
+  width: 20px;
+  font-size: 10px;
+  margin-bottom: 15px;
+  margin-left: -20px;
+}
+
+#list-text li {
+  font-size: 10px;
+  margin-left: -20px;
+  margin-bottom: 15px;
+}
+
+.pie2 {
+  background-color: #514949;
+  color: #AAA;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.pie2 span {
+  color: #E47676;
+}
+
+.contacto-oscuro {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contact-fondo {
+  background-image: url("../../assets/images/blog3.jpg");
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact-us h1 {
+  background-color: #E47676;
+  padding: 20px;
+  width: 290px;
+  color: #fff;
+}
+
+.contact-us .right {
+  color: #fff;
+}
+
+.map {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.forms input {
+  background-color: #EEEEEE;
+  border-color: #EEEEEE;
+  margin-bottom: 10px;
+}
+
+.forms textarea {
+  background-color: #EEEEEE;
+  border-color: #EEEEEE;
+  margin-bottom: 10px;
+}
+
+.forms button {
+  background-color: #AAA;
+  color: #fff;
+}
+
+@media (max-width: 400px) {
+  .btn-group {
+    width: 190px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cart {
+    width: 100px;
+    margin-top: -55px;
+  }
+}
